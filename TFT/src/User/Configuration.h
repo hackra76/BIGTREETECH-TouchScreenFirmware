@@ -430,12 +430,12 @@
  * Enable Start & End G-code in SETTINGS -> FEATURE menu.
  */
 // Start G-code - run this G-code before starting print
-#define PRINT_START_GCODE "M75\nG28 XY R10\n" // Raise Z 10mm before homing X & Y
+#define PRINT_START_GCODE "M75\n" // Raise Z 10mm before homing X & Y
 
 // End G-code - run this G-code after finishing print
-#define PRINT_END_GCODE "M77\nG90\nG1 E-4\nG92 E0\nM18\n" // Switch to absolute positioning, reduce filament pressure by performing small retract, reset extruder position, disable steppers
+#define PRINT_END_GCODE "M77\n" // Switch to absolute positioning, reduce filament pressure by performing small retract, reset extruder position, disable steppers
 
 // Cancel G-code - run this G-code after canceling print
-#define PRINT_CANCEL_GCODE "M77\nG28 XY R10\n" // Home XY and raise Z 10mm
+#define PRINT_CANCEL_GCODE "M77\n" // Home XY and raise Z 10mm
 
 #endif
