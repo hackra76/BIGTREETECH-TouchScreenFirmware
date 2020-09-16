@@ -370,7 +370,7 @@
 #define BTT_MINI_UPS    true   //to enabled: true | to disabled: false
 
 // (mm) Raise Z axis on resume (on power loss with UPS)
-#define POWER_LOSS_ZRAISE 10
+#define POWER_LOSS_ZRAISE 5
 
 // Prevent extrusion if the temperature is below set temperature
 #define PREVENT_COLD_EXTRUSION_MINTEMP 170
