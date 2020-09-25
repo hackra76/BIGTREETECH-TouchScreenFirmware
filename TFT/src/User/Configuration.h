@@ -91,7 +91,7 @@
  *
  * Options:  0: Disabled    1: Enabled
  */
-#define SERIAL_ALWAYS_ON 0  // Default: 0 (Disabled)
+#define SERIAL_ALWAYS_ON 1  // Default: 0 (Disabled)
 
 //===========================================================================
 //========================== Touch Mode Settings ============================
@@ -173,7 +173,7 @@
 #define FAN_CTRL_NUM 0    // set in 1~2
 
 #define PREHEAT_LABELS   {"PLA", "PETG", "ABS", "WOOD", "TPU", "NYLON"}
-#define PREHEAT_HOTEND   {210,   240,    230,   170,    220,   250}
+#define PREHEAT_HOTEND   {215,   240,    230,   170,    220,   250}
 #define PREHEAT_BED      {55,    70,     90,    50,     50,    90}
 
 #define HEAT_MAX_TEMP    {275,       275,       275,       275,       275,       275,       150,    60}   //max temperature can be set
@@ -222,7 +222,7 @@
 #define Z_MAX_POS 290
 
 // Specify a pause position as { X, Y, Z_raise }
-#define NOZZLE_PAUSE_RETRACT_LENGTH 5   // (mm)
+#define NOZZLE_PAUSE_RETRACT_LENGTH 6   // (mm)
 #define NOZZLE_RESUME_PURGE_LENGTH  5   // (mm)
 #define NOZZLE_PAUSE_X_POSITION     (X_MIN_POS + 10)  // (mm) Must be an integer
 #define NOZZLE_PAUSE_Y_POSITION     (Y_MIN_POS + 10)  // (mm) Must be an integer
@@ -372,7 +372,7 @@
 #define BTT_MINI_UPS    true   //to enabled: true | to disabled: false
 
 // (mm) Raise Z axis on resume (on power loss with UPS)
-#define POWER_LOSS_ZRAISE 5
+#define POWER_LOSS_ZRAISE 10
 
 // Prevent extrusion if the temperature is below set temperature
 #define PREVENT_COLD_EXTRUSION_MINTEMP 170
