@@ -341,7 +341,7 @@
 
 // Smart filament runout detection
 // For use with an encoder disc that toggles runout pin as filament moves
-#define FILAMENT_RUNOUT_DISTANCE_MM 15
+#define FILAMENT_RUNOUT_DISTANCE_MM 7
 
 // Enable alternative Move Menu Buttons Layout matching the direction of actual printer axis.
 // update the icons from alternate icon folder
