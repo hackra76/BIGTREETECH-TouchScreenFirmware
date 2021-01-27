@@ -1,6 +1,6 @@
 #ifndef _CONFIGURATION_H_
 #define _CONFIGURATION_H_
-#define CONFIG_VERSION 20210105
+#define CONFIG_VERSION 20210124
 
 //===========================================================================
 //============================= General Settings ============================
@@ -255,11 +255,11 @@
 #define ENABLE_BL_VALUE 1 // Default: 1
 
 /** TouchMI settings (on ABL menu)
- * 
+ *
  * Enable this option for settings TouchMI sensor on ABL Menu (Init, Z Offset, Save, Test).
- * 
+ *
  * Options: [enable:1, disable:0]
- * 
+ *
  */
 #define TOUCHMI_SENSOR_VALUE 0 // Default: 0
 
@@ -303,6 +303,9 @@
 
 // Show bootscreen when starting up
 #define SHOW_BTT_BOOTSCREEN
+
+// Bootscreen logo time in ms
+#define BTT_BOOTSCREEN_TIME 3000
 
 // Enable alternative Move Menu Buttons Layout matching the direction of actual printer axis.
 // update the icons from alternate icon folder
@@ -419,10 +422,21 @@
  */
 #define TERMINAL_KEYBOARD_COLOR_LAYOUT 0  // Default: 0
 
-// QWERTY keyboard layout
-// Enable QWERTY keyboard layout in Terminal menu (Only for TFT70 V3.0)
-#define TERMINAL_KEYBOARD_QWERTY_LAYOUT
+//
+// QWERTY/QWERTZ keyboard layout
+//
 
+/**
+ * keyboard layout for Terminal Keyboard
+ *
+ * Options:  [0: Default, 1: Qwerty, 2: Qwertz, 4: Azerty]
+ * Default: The keyboard has an alphabetically order
+ * Qwerty: The typically keyboard Layout for english (Only for TFT70 V3.0)
+ * Qwertz: The typically keyboard Layout for german (Only for TFT70 V3.0)
+ * Azerty: The typically keyboard Layout for french (Only for TFT70 V3.0)
+ *
+ */
+#define TERMINAL_KEYBOARD_LAYOUT 1  // Default: 0
 
 //===========================================================================
 //=========================== Other Settings ================================
